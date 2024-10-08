@@ -1,18 +1,18 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+const daysEl = document.querySelector('data-days');
+const hoursEl = document.querySelector('data-hours');
+const minutesEl = document.querySelector('data-minutes');
+const secondsEl = document.querySelector('data-seconds');
 
 
 
-const date = document.querySelector('#datetime-picker');
-const btn = document.querySelector('[data-start]');
-const day = document.querySelector('[data-days]');
-const hour = document.querySelector('[data-hours]');
-const min = document.querySelector('[data-minutes]');
-const sec = document.querySelector('[data-seconds]');
-const spans = document.querySelectorAll('.value');
+
+
 
 
 
@@ -38,11 +38,6 @@ function onStart() {
     updateTimer(convertedData); // Оновлюємо таймер на екрані
   }, 1000);
 }
-
-
-
-
-
 
 
 function updateTimer({ days, hours, minutes, seconds }) {
