@@ -21,13 +21,13 @@ document.querySelector('.form').addEventListener('submit', function (event) {
     .then(delay => {
       iziToast.success({
         title: 'Success',
-        message: ` Fulfilled promise in ${delay}ms`,
+        message: `✅ Fulfilled promise in ${delay}ms`,
       });
     })
     .catch(delay => {
       iziToast.error({
         title: 'Error',
-        message: ` Rejected promise in ${delay}ms`,
+        message: `❌ Rejected promise in ${delay}ms`,
       });
     });
 });
