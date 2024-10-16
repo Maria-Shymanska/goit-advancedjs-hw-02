@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import '../css/reset.css';
+import '../css/styles.css';
 
 document.querySelector('.form').addEventListener('submit', function (event) {
   event.preventDefault();
